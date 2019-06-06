@@ -13,7 +13,7 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        fetch(`http://localhost:8000/home`)
+        fetch(https://the-social-reloader-server.herokuapp.com/home`)
       .then(response => response.json())
       .then(data => 
         this.handleData(data)
