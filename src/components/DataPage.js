@@ -21,7 +21,8 @@ class DataPage extends React.Component {
         this.setState({
             results: data[0],
             savedId: data[0].id,
-            path: data[0].img
+            path: data[0].img,
+            type: data[0].type
         })
       );
     }
@@ -51,11 +52,22 @@ class DataPage extends React.Component {
                         {console.log(typeof this.state.path)}
                         {imgsrc}
                         <div className="Page-Info-P">
-                            <div className="Page-Info">
+                                {if(this.state.type != shotgun) {<div className="Page-Info">
                                 <p>Caliber: {this.state.results.caliber}</p>
                                 <p>Bullet: {this.state.results.bullet}</p>
                                 <p>Primer: {this.state.results.primer}</p>
                                 <p>Case: {this.state.results.brandcase}</p>
+                                <p>Price Per Round: {this.state.results.price}</p>
+                                <p>Fps: {this.state.results.fps}</p>
+                                <p>Minimum Group: {this.state.results.min}</p>
+                                <p>Average Group: {this.state.results.avg}</p>
+                                <p>Maximum Group: {this.state.results.max}</p>
+                            </div>} else {
+                                <div className="Page-Info">
+                                <p>Gauge: {this.state.results.gauge}</p>
+                                <p>Shot: {this.state.results.shot}</p>
+                                <p>Primer: {this.state.results.primer}</p>
+                                <p>shell: {this.state.results.shell}</p>
                                 <p>Price Per Round: {this.state.results.price}</p>
                                 <p>Fps: {this.state.results.fps}</p>
                                 <p>Minimum Group: {this.state.results.min}</p>
