@@ -8,7 +8,8 @@ class DataPage extends React.Component {
             results: [],
             savedId: "test",
             path: null,
-            ifsaved: false
+            ifsaved: false,
+            type: ''
         }
         this.saveButton = this.saveButton.bind(this);
     }
@@ -52,7 +53,8 @@ class DataPage extends React.Component {
                         {console.log(typeof this.state.path)}
                         {imgsrc}
                         <div className="Page-Info-P">
-                                {if(this.state.type != shotgun) {<div className="Page-Info">
+                                {if(this.state.type != shotgun) {
+                                return (<div className="Page-Info">
                                 <p>Caliber: {this.state.results.caliber}</p>
                                 <p>Bullet: {this.state.results.bullet}</p>
                                 <p>Primer: {this.state.results.primer}</p>
@@ -62,8 +64,8 @@ class DataPage extends React.Component {
                                 <p>Minimum Group: {this.state.results.min}</p>
                                 <p>Average Group: {this.state.results.avg}</p>
                                 <p>Maximum Group: {this.state.results.max}</p>
-                            </div>} else {
-                                <div className="Page-Info">
+                            </div>)} else {
+                                return (<div className="Page-Info">
                                 <p>Gauge: {this.state.results.gauge}</p>
                                 <p>Shot: {this.state.results.shot}</p>
                                 <p>Primer: {this.state.results.primer}</p>
@@ -73,7 +75,7 @@ class DataPage extends React.Component {
                                 <p>Minimum Group: {this.state.results.min}</p>
                                 <p>Average Group: {this.state.results.avg}</p>
                                 <p>Maximum Group: {this.state.results.max}</p>
-                            </div>
+                            </div>)}}
                             <div className="Page-Div-P">
                                 <p className="Page-P">{this.state.results.paragraph}</p>
                             </div>
