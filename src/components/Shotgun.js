@@ -23,7 +23,7 @@ class Shotgun extends React.Component {
 
     render() {
         return(
-            <body>
+            <section>
                 <div className="Container">
                     <Header />
                     <main>
@@ -35,7 +35,7 @@ class Shotgun extends React.Component {
                         </section>
                     </main>
                 </div>
-            </body>
+            </section>
         )
     }
 }
