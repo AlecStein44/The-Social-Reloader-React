@@ -45,7 +45,7 @@ class Search extends React.Component {
 
     render() {
         return(
-            <body>
+            <section>
                 <div className="Container">
                     <Header />
                     <main>
@@ -60,7 +60,7 @@ class Search extends React.Component {
                         </section>
                     </main>
                 </div>
-            </body>
+            </section>
         )
     }
 }
