@@ -62,7 +62,7 @@ class PistolPost extends React.Component {
         formData.append('paragraph', this.state.paragraph )
         formData.append('type', this.state.type )
         console.log(formData.entries())
-        fetch(`http://localhost:8000/pistolpost`, {  
+        fetch(`https://the-social-reloader-server.herokuapp.com/pistolpost`, {  
             method: 'POST',  
             body: formData 
         })
