@@ -53,7 +53,7 @@ class DataPage extends React.Component {
                         {console.log(typeof this.state.path)}
                         {imgsrc}
                         <div className="Page-Info-P">
-                                {(this.state.type != shotgun) ?
+                                {(this.state.type != 'shotgun') ?
                                     <div className="Page-Info">
                                         <p>Caliber: {this.state.results.caliber}</p>
                                         <p>Bullet: {this.state.results.bullet}</p>
