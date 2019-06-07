@@ -12,7 +12,7 @@ class Shotgun extends React.Component {
       }
 
     componentDidMount() {
-        fetch(`http://localhost:8000/Shotgun`)
+        fetch(`https://the-social-reloader-server.herokuapp.com/shotgun`)
       .then(response => response.json())
       .then(data => 
         this.setState({
