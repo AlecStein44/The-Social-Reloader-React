@@ -61,7 +61,7 @@ class ShotgunPost extends React.Component {
         formData.append('paragraph', this.state.paragraph )
         formData.append('type', this.state.type )
         console.log(formData.entries())
-        fetch(`http://localhost:8000/shotgunpost`, {  
+        fetch(`https://the-social-reloader-server.herokuapp.com/shotgunpost`, {  
             method: 'POST',  
             body: formData 
         })
