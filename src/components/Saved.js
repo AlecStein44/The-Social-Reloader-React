@@ -14,7 +14,7 @@ class Saved extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:8000/saved', {
+        fetch('https://the-social-reloader-server.herokuapp.com/saved', {
             method: 'GET',
             headers: {
             "Accept": "application/json",
