@@ -57,6 +57,7 @@ class DataPage extends React.Component {
                                     <div className="Page-Info">
                                         <p>Caliber: {this.state.results.caliber}</p>
                                         <p>Bullet: {this.state.results.bullet}</p>
+                                        <p>Powder: {this.state.results.powder}</p>
                                         <p>Primer: {this.state.results.primer}</p>
                                         <p>Case: {this.state.results.brandcase}</p>
                                         <p>Price Per Round: {this.state.results.price}</p>
@@ -68,6 +69,7 @@ class DataPage extends React.Component {
                                     <div className="Page-Info">
                                         <p>Gauge: {this.state.results.gauge}</p>
                                         <p>Shot: {this.state.results.shot}</p>
+                                        <p>Powder: {this.state.results.powder}</p>
                                         <p>Primer: {this.state.results.primer}</p>
                                         <p>shell: {this.state.results.shell}</p>
                                         <p>Price Per Round: {this.state.results.price}</p>
