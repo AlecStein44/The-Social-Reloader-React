@@ -15,7 +15,7 @@ class DataPage extends React.Component {
 
     componentDidMount() {
         let path = window.location.search
-        fetch(`http://localhost:8000/data${path}`)
+        fetch(`https://the-social-reloader-server.herokuapp.com/data${path}`)
       .then(response => response.json())
       .then(data => 
         this.setState({
