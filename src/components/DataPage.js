@@ -43,7 +43,7 @@ class DataPage extends React.Component {
         console.log(this.state.path)
         let imgsrc = <img src={`../uploads/${this.state.path}`} alt="Data Pic" className="Page-Img" />
         return(
-            <body>
+            <section>
                 <Header />
                 <main className="Page-Main">
                     <section className="Page-Sec">
@@ -71,7 +71,7 @@ class DataPage extends React.Component {
                         </div>
                     </section>
                 </main>
-            </body>
+            </section>
         )
     }
 }
