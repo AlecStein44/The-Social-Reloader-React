@@ -81,7 +81,7 @@ class ShotgunPost extends React.Component {
     }
     render() {
         return(
-            <body>
+            <section>
                 <div className="Container">
                     <Header />
                     <main>
@@ -118,7 +118,7 @@ class ShotgunPost extends React.Component {
                         </div>
                     </main>
                 </div>
-            </body>
+            </section>
         )
     }
 }
