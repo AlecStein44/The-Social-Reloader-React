@@ -15,7 +15,7 @@ class Search extends React.Component {
 
     componentDidMount() {
         let path = window.location.search
-        fetch(`http://localhost:8000/search${path}`)
+        fetch(`https://the-social-reloader-server.herokuapp.com/search${path}`)
       .then(response => response.json())
       .then(data => 
         this.handleState(data)
