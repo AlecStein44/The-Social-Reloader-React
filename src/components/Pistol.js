@@ -12,7 +12,7 @@ class Pistol extends React.Component {
       }
 
     componentDidMount() {
-        fetch(`http://localhost:8000/pistol`)
+        fetch(`https://the-social-reloader-server.herokuapp.com/pistol`)
       .then(response => response.json())
       .then(data => 
         this.setState({
