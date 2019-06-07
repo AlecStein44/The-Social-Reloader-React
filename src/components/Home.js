@@ -32,7 +32,7 @@ class Home extends React.Component {
     }
     render() {
         return(
-            <body>
+            <section>
                 <div className="Container">
                     <Header />
                     <main>
@@ -44,7 +44,7 @@ class Home extends React.Component {
                             </section>
                     </main>
                 </div>
-            </body>
+            </section>
         )
     }
 }
