@@ -54,28 +54,28 @@ class DataPage extends React.Component {
                         {imgsrc}
                         <div className="Page-Info-P">
                                 {(this.state.type != shotgun) ?
-                                return (<div className="Page-Info">
-                                <p>Caliber: {this.state.results.caliber}</p>
-                                <p>Bullet: {this.state.results.bullet}</p>
-                                <p>Primer: {this.state.results.primer}</p>
-                                <p>Case: {this.state.results.brandcase}</p>
-                                <p>Price Per Round: {this.state.results.price}</p>
-                                <p>Fps: {this.state.results.fps}</p>
-                                <p>Minimum Group: {this.state.results.min}</p>
-                                <p>Average Group: {this.state.results.avg}</p>
-                                <p>Maximum Group: {this.state.results.max}</p>
-                            </div>) :
-                                return (<div className="Page-Info">
-                                <p>Gauge: {this.state.results.gauge}</p>
-                                <p>Shot: {this.state.results.shot}</p>
-                                <p>Primer: {this.state.results.primer}</p>
-                                <p>shell: {this.state.results.shell}</p>
-                                <p>Price Per Round: {this.state.results.price}</p>
-                                <p>Fps: {this.state.results.fps}</p>
-                                <p>Minimum Group: {this.state.results.min}</p>
-                                <p>Average Group: {this.state.results.avg}</p>
-                                <p>Maximum Group: {this.state.results.max}</p>
-                            </div>)}}
+                                    <div className="Page-Info">
+                                        <p>Caliber: {this.state.results.caliber}</p>
+                                        <p>Bullet: {this.state.results.bullet}</p>
+                                        <p>Primer: {this.state.results.primer}</p>
+                                        <p>Case: {this.state.results.brandcase}</p>
+                                        <p>Price Per Round: {this.state.results.price}</p>
+                                        <p>Fps: {this.state.results.fps}</p>
+                                        <p>Minimum Group: {this.state.results.min}</p>
+                                        <p>Average Group: {this.state.results.avg}</p>
+                                        <p>Maximum Group: {this.state.results.max}</p>
+                                    </div> :
+                                    <div className="Page-Info">
+                                        <p>Gauge: {this.state.results.gauge}</p>
+                                        <p>Shot: {this.state.results.shot}</p>
+                                        <p>Primer: {this.state.results.primer}</p>
+                                        <p>shell: {this.state.results.shell}</p>
+                                        <p>Price Per Round: {this.state.results.price}</p>
+                                        <p>Fps: {this.state.results.fps}</p>
+                                        <p>Minimum Group: {this.state.results.min}</p>
+                                        <p>Average Group: {this.state.results.avg}</p>
+                                        <p>Maximum Group: {this.state.results.max}</p>
+                                    </div>}
                             <div className="Page-Div-P">
                                 <p className="Page-P">{this.state.results.paragraph}</p>
                             </div>
