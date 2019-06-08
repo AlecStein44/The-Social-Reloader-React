@@ -43,7 +43,7 @@ class DataPage extends React.Component {
 
     render() {
         console.log(this.state.path)
-        let imgsrc = <img src={`https://the-social-reloader-server.herokuapp.com/shotgun/public/uploads/${this.state.path}`} alt="Data Pic" className="Page-Img" />
+        let imgsrc = <img src={`https://the-social-reloader-server.herokuapp.com/public/uploads/${this.state.path}`} alt="Data Pic" className="Page-Img" />
         return(
             <section>
                 <Header />
