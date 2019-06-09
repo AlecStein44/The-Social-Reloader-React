@@ -10,6 +10,7 @@ const ConstShotgun = (props) => {
                 <div className="rps-info">
                 <p>Gauge: {props.gauge}</p>
                 <p>Shot: {props.shot}</p>
+                <p>Powder: {props.powder}</p>
                 <p>Primer: {props.primer}</p>
                 <p>Shell: {props.shell}</p>
                 <p>Price Per Round: {props.price}</p>
