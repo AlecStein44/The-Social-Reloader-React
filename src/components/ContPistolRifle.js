@@ -10,6 +10,7 @@ const ContPistolRifle = (props) => {
                 <div className="rps-info">
                 <p>Caliber: {props.cal}</p>
                 <p>Bullet: {props.bullet}</p>
+                <p>Powder: {props.powder}</p>
                 <p>Primer: {props.primer}</p>
                 <p>Case: {props.brandcase}</p>
                 <p>Price Per Round: {props.price}</p>
