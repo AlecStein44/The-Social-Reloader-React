@@ -30,7 +30,7 @@ class Shotgun extends React.Component {
                         <section className="rps-sec">
                             <h2>Shotgun Load Data</h2>
                             {this.state.results.map(data => {
-                                return <ContShotgun page={data.id} img={data.img} name={data.name} user={data.user} gauge={data.gauge} shot={data.shot} primer={data.primer} shell={data.shell} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
+                                return <ContShotgun page={data.id} img={data.img} name={data.name} user={data.user} gauge={data.gauge} shot={data.shot} powder={data.powder} primer={data.primer} shell={data.shell} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
                             })}
                         </section>
                     </main>
