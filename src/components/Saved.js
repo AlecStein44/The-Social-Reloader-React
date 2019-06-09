@@ -59,10 +59,10 @@ class Saved extends React.Component {
                     <h2 className="centerh2">Saved Reloads</h2>
                     <section className="rps-sec">
                       {(this.state.resultsRifle.length !== 0) ? this.state.resultsRifle.map(data => {
-                                return <ContPistolRifle page={data.id} img={data.img} name={data.name} user={data.user} cal={data.caliber} bullet={data.bullet} primer={data.primer} brandcase={data.brandcase} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
+                                return <ContPistolRifle page={data.id} img={data.img} name={data.name} user={data.user} cal={data.caliber} bullet={data.bullet} powder={data.powder} primer={data.primer} brandcase={data.brandcase} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
                         }) : console.log('No Rifle or Pistol Found')}
                       {(this.state.resultsShotgun.length !== 0) ? this.state.resultsShotgun.map(data => {
-                                return <ContShotgun page={data.id} img={data.img} name={data.name} user={data.user} gauge={data.gauge} shot={data.shot} primer={data.primer} shell={data.shell} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
+                                return <ContShotgun page={data.id} img={data.img} name={data.name} user={data.user} gauge={data.gauge} shot={data.shot} powder={data.powder} primer={data.primer} shell={data.shell} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
                         }) : console.log('No Shotgun Found')}
                         {this.state.isData ? console.log('Data is Found') : <h2 className="saved-red">No Saved Data Found</h2>}
                     </section>
