@@ -5,9 +5,7 @@ import Rifle from './components/Rifle';
 import Pistol from './components/Pistol';
 import Shotgun from './components/Shotgun';
 import ErrorPage from './components/ErrorPage';
-import Popular from './components/Popular';
 import Saved from './components/Saved';
-import User from './components/User';
 import RiflePost from './components/RiflePost';
 import PistolPost from './components/PistolPost';
 import ShotgunPost from './components/ShotgunPost';
@@ -24,9 +22,7 @@ class App extends React.Component {
                   <Route path="/rifle" component={Rifle} />
                   <Route path="/pistol" component={Pistol} />
                   <Route path="/shotgun" component={Shotgun} />
-                  <Route path="/popular" component={Popular} />
                   <Route path="/saved" component={Saved} />
-                  <Route path="/User" component={User} />
                   <Route path="/riflepost" component={RiflePost} />
                   <Route path="/pistolpost" component={PistolPost} />
                   <Route path="/shotgunpost" component={ShotgunPost} />
