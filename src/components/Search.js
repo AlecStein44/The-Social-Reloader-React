@@ -12,7 +12,7 @@ class Search extends React.Component {
             isThereData: false
         }
     }
-
+    //gets items from server
     componentDidMount() {
         let path = window.location.search
         fetch(`https://the-social-reloader-server.herokuapp.com/search${path}`)
@@ -21,7 +21,7 @@ class Search extends React.Component {
         this.handleState(data)
       );
     }
-
+    // sort items and divide them into rifle&pistol/ shotgun
     handleState(data) {
         let riflePistolArr = []
         let shotgun = []
