@@ -10,7 +10,7 @@ class Shotgun extends React.Component {
             results: []
         }
       }
-
+    //gets items from server
     componentDidMount() {
         fetch(`https://the-social-reloader-server.herokuapp.com/shotgun`)
       .then(response => response.json())
