@@ -8,13 +8,13 @@ class Header extends React.Component {
           inputValue: ''
         };
     }
-
+    // this updates state every time the input has changes
     updateInputValue(evt) {
         this.setState({
           inputValue: evt.target.value
         });
     }
-
+    //this changes the url to the search page with the state attached to the query
     handleSubmit = (e) => {
         e.preventDefault()
         return  window.location.href = `/search?search=${this.state.inputValue}`
