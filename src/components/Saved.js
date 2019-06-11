@@ -12,7 +12,7 @@ class Saved extends React.Component {
             isData: false
         }
     }
-
+    //gets items from server
     componentDidMount() {
         fetch('https://the-social-reloader-server.herokuapp.com/saved', {
             method: 'GET',
@@ -24,7 +24,7 @@ class Saved extends React.Component {
         .then(response => { return response.json();})
         .then(responseData => {console.log(responseData); return this.handleState(responseData);})
     }
-
+    //handle all the items and compares id from the local storage
     handleState(data) {
         if(localStorage.getItem('item') !== null) {
             let getItem = localStorage.getItem('item')
