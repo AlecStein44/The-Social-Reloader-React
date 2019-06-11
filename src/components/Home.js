@@ -32,19 +32,17 @@ class Home extends React.Component {
     }
     render() {
         return(
-            <section>
-                <div className="Container">
-                    <Header />
-                    <main>
-                            <NewPost />
-                            <section className="sub-content">
-                                {this.state.resultsRP.map(data => {
+               <div className="Container">
+                   <Header />
+                   <main>
+                           <NewPost />
+                           <section className="sub-content">
+                               {this.state.resultsRP.map(data => {
                                     return <ContPistolRifle page={data.id} img={data.img} name={data.name} user={data.user} cal={data.caliber} bullet={data.bullet} powder={data.powder} primer={data.primer} brandcase={data.brandcase} price={data.price} fps={data.fps} min={data.min} avg={data.avg} max={data.max}  />
-                                })}
-                            </section>
-                    </main>
-                </div>
-            </section>
+                               })}
+                           </section>
+                   </main>
+               </div>
         )
     }
 }
