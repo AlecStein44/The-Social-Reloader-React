@@ -10,7 +10,7 @@ class Pistol extends React.Component {
             results: []
         }
       }
-
+    //gets items from server
     componentDidMount() {
         fetch(`https://the-social-reloader-server.herokuapp.com/pistol`)
       .then(response => response.json())
