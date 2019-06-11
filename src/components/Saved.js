@@ -53,7 +53,7 @@ class Saved extends React.Component {
 
     render() {
         return(
-            <section>
+            <div class="Container">
                 <Header />
                 <main>
                     <h2 className="centerh2">Saved Reloads</h2>
@@ -67,7 +67,7 @@ class Saved extends React.Component {
                         {this.state.isData ? console.log('Data is Found') : <h2 className="saved-red">No Saved Data Found</h2>}
                     </section>
                 </main>
-            </section>
+            </div>
         )
     }
 }
