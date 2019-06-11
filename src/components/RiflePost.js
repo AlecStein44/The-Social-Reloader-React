@@ -25,6 +25,7 @@ class RiflePost extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.baseState = this.state 
     }
+    //changes state everytime the input changes.
     handleChange(e) {
         this.setState({
             name: e.target.value,
@@ -43,7 +44,7 @@ class RiflePost extends React.Component {
         })
         console.log(this.state.primer)
     }
-
+    //takes all the keys from state and put in a formdata and post to server
     handleSubmit(e) {
         e.preventDefault()
         let formData = new FormData();
