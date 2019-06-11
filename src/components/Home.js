@@ -11,7 +11,7 @@ class Home extends React.Component {
             resultsRP: []
         }
     }
-
+    //gets items from server
     componentDidMount() {
         fetch(`https://the-social-reloader-server.herokuapp.com/home`)
       .then(response => response.json())
@@ -19,7 +19,7 @@ class Home extends React.Component {
         this.handleData(data)
       );
     }
-
+    //sorts the items by random and put the items in the state
     handleData = (data) => {
         let final = data
                         .map((a) => ({sort: Math.random(), value: a}))
