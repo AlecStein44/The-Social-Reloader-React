@@ -94,6 +94,7 @@ a {
   }
 
   main {
+    height: 100%;
     padding-top: 15px;
     background: #848689;
     opacity: 0.98;
