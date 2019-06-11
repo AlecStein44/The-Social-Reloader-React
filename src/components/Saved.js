@@ -53,7 +53,7 @@ class Saved extends React.Component {
 
     render() {
         return(
-            <div class="ContainerTwo">
+            <div class="Container">
                 <Header />
                 <main>
                     <h2 className="centerh2">Saved Reloads</h2>
