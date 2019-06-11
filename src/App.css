@@ -1,4 +1,7 @@
 @import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
+html {
+  height: 100vh;
+}
 body  { 
   margin: 0;
   height: 100%
