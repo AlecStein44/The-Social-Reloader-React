@@ -13,7 +13,7 @@ class DataPage extends React.Component {
         }
         this.saveButton = this.saveButton.bind(this);
     }
-
+    // gets the correct item from server
     componentDidMount() {
         let path = window.location.search
         fetch(`https://the-social-reloader-server.herokuapp.com/data${path}`)
@@ -27,7 +27,7 @@ class DataPage extends React.Component {
         })
       );
     }
-
+    // this saves item id to local storage
     saveButton() {
         if(localStorage.getItem('item') === null) {
             localStorage.setItem('item', this.state.savedId)
