@@ -10,7 +10,7 @@ class Rifle extends React.Component {
             results: []
         }
     }
-
+    //gets items from server and set them to state
     componentDidMount() {
         fetch(`https://the-social-reloader-server.herokuapp.com/rifle`)
       .then(response => response.json())
