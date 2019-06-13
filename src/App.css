@@ -1,5 +1,10 @@
 @import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
 
+.Container {
+   height: 100vh;
+   background: #848689;
+}
+
 body  { 
   margin: 0;
 }
@@ -91,7 +96,6 @@ a {
   }
 
   main {
-    height: 100%;
     padding-top: 15px;
     background: #848689;
     opacity: 0.98;
