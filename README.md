@@ -5,9 +5,8 @@ Server Repo: https://github.com/AlecStein44/the-social-reloader-server
 
 ## Description
 
-   This App is for competitive shooters, hunters, and people who enjoy reloading. 
-    Users can share, post new data, search for data, and save data. 
-    This app is essentially the libarary for reloaders that they can look at reloading data and know where to start when developing         their own load data.  
+   This App is a social media lite (lite meaning it doesn't have all features of a proper social media app) where users can post, search, save, and browse reloading data for competitive shooting, hunting, and recerational shooting. Users are freely allowed to browse the app and can even choose what catagory they want to search in and when the user finds a practicaler data they can save it and it can be accessed easily by clicking the saved link. Users can also post data and just need to fill in the forms and click the submit button.
+This app will be extremely useful for reloaders to easily get access to reloading data.
     
 ### Api Documentation
 /rifle, /pistol, /shotgun:
