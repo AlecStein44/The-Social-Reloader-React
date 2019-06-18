@@ -8,13 +8,13 @@ class Header extends React.Component {
           inputValue: ''
         };
     }
-    // this updates state every time the input has changes
+
     updateInputValue(evt) {
         this.setState({
           inputValue: evt.target.value
         });
     }
-    //this changes the url to the search page with the state attached to the query
+
     handleSubmit = (e) => {
         e.preventDefault()
         return  window.location.href = `/search?search=${this.state.inputValue}`
@@ -23,12 +23,12 @@ class Header extends React.Component {
         return(
             <header>
                 <nav>
-                    <NavLink to="/" className="navA">Home</NavLink>
+                    <NavLink to="/home" className="navA">Home</NavLink>
                     <NavLink to="/rifle" className="navA">Rifle</NavLink>
                     <NavLink to="/pistol" className="navA">Pistol</NavLink>
                     <NavLink to="/shotgun" className="navA">Shotgun</NavLink>
                 </nav>
-                <Link to="/" className="webname">The Social Reloader</Link>
+                <Link to="/home" className="webname">The Social Reloader</Link>
                 <form className="searchform" onSubmit={this.handleSubmit}>
                             <input type="text" placeholder="Search For Reloads" className="search" value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)} />
                             <button type="submit" ><i class="fa fa-search"></i></button>
