@@ -35,6 +35,42 @@ a {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.landing-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  width: 25%;
+  padding: 20px;
+  background: white;
+  border-radius: 5%;
+}
+
+.landing-h2 {
+  color: black;
+}
+
+.landing-p {
+  color: black;
+  max-width: 650px;
+  line-height: 20pt;
+}
+
+.landing-start {
+  text-decoration: none;
+  background: black;
+  color: white;
+  margin-top: 10px;
+  padding: 15px 15px;
+  border-radius: 10%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.landing-start:hover {
+  background: red;
+  color: white;
+}
+
 .submit {
     cursor: pointer;
     margin: 10px;
