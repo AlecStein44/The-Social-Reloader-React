@@ -219,7 +219,7 @@ a {
 
   .rps-img {
     max-width: 400px;
-    max-height: 350px;
+    height: auto;
     min-width: 0;
     align-self: center;
     margin: 0px 5% 5% 5%;
@@ -408,8 +408,8 @@ a {
   }
 
   .Page-Img {
-    max-width: 100%;
-    max-height: 450px;
+    width: 100%;
+    height: auto;
   }
 
   .Page-Info-P {
@@ -574,8 +574,8 @@ a {
   }
 
   .rps-img {
-    max-width: 100%;
-    max-height: 350px;
+    width: 100%;
+    height: auto;
     min-width: 0;
     align-self: center;
     margin: 0px 5% 5% 5%;
@@ -764,8 +764,8 @@ a {
   }
 
   .Page-Img {
-    max-width: 100%;
-    max-height: 450px;
+    width: 100%;
+    height: auto;
   }
 
   .Page-Info-P {
@@ -934,8 +934,8 @@ a {
   }
 
   .rps-img {
-    max-width: 100%;
-    max-height: 350px;
+    width: 100%;
+    height: auto;
     min-width: 0;
     align-self: center;
     margin: 0px 5% 5% 5%;
@@ -1124,8 +1124,8 @@ a {
   }
 
   .Page-Img {
-    max-width: 100%;
-    max-height: 450px;
+    width: 100%;
+    height: auto;
   }
 
   .Page-Info-P {
