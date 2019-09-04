@@ -33,7 +33,6 @@ class Home extends React.Component {
     render() {
         return(
                <div className="Container">
-                   <Header />
                    <main>
                            <NewPost />
                            <section className="sub-content">

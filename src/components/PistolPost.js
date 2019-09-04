@@ -85,7 +85,6 @@ class PistolPost extends React.Component {
         return(
             <section>
                 <div className="Container">
-                    <Header />
                     <main>
                         <h3 className="post-h3">New Pistol Post</h3>
                         <div class="post-div">

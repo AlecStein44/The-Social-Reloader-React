@@ -25,7 +25,6 @@ class Pistol extends React.Component {
         return(
             <section>
                 <div className="Container">
-                    <Header />
                     <main>
                         <section className="rps-sec">
                             <h2>Pistol Load Data</h2>

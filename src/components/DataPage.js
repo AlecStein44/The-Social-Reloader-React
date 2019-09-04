@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Header from './Header';
 
 class DataPage extends React.Component {
     constructor(props) {
@@ -46,7 +45,6 @@ class DataPage extends React.Component {
         let imgsrc = <img src={`https://the-social-reloader-server.herokuapp.com/uploads/${this.state.path}`} alt="Data Pic" className="Page-Img" />
         return(
             <section>
-                <Header />
                 <main className="Page-Main">
                     <section className="Page-Sec">
                         <h2 className="Page-H2">{this.state.results.name}</h2>

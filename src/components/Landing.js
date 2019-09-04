@@ -7,7 +7,6 @@ class Landing extends React.Component {
     render() {
         return(
             <div className="Container">
-                <Header />
                 <main className="landing-main">
                     <div className="landing-div">    
                         <h2 className="landing-h2">Welcome to The Social Reloader!</h2>

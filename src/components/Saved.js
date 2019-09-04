@@ -54,7 +54,6 @@ class Saved extends React.Component {
     render() {
         return(
             <div class="Container">
-                <Header />
                 <main>
                     <h2 className="centerh2">Saved Reloads</h2>
                     <section className="rps-sec">

@@ -46,7 +46,6 @@ class Search extends React.Component {
     render() {
         return(
                <div className="Container">
-                   <Header />
                    <main>
                        <section className="rps-sec">
                            <h2>Search Results</h2>

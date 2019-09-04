@@ -85,7 +85,6 @@ class RiflePost extends React.Component {
         return(
             <section>
                 <div className="Container">
-                    <Header />
                     <main>
                         <h3 className="post-h3">New Rifle Post</h3>
                         <div class="post-div">
