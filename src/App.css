@@ -94,6 +94,14 @@ a {
   margin-top: 5%;
 }
 
+.log-matcherror-none {
+  display: none;
+}
+
+.log-matcherror {
+  color: red
+}
+
 @media only screen and (min-width: 1200px) {
   header {
     display: flex;

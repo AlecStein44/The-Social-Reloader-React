@@ -33,6 +33,7 @@ class Header extends React.Component {
                             <input type="text" placeholder="Search For Reloads" className="search" value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)} />
                             <button type="submit" ><i class="fa fa-search"></i></button>
                 </form>
+                <Link to="/user" className="header-a">User</Link>
                 <Link to="/saved" className="header-a">Saved</Link>
             </header>
         )

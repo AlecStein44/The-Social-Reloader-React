@@ -9,9 +9,20 @@ class SignUp extends React.Component {
             email: '',
             username: '',
             password: '',
-            submitted: false
+            submitted: false,
+            userdata: {}
         }
         this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    componentDidMount() {
+        fetch(`https://the-social-reloader-server.herokuapp.com/escheck`)
+      .then(response => response.json())
+      .then(data => 
+        this.setState({
+            userdata: data
+        })
+      )
     }
 
     handleChange(e) {
@@ -29,33 +40,33 @@ class SignUp extends React.Component {
         formData.append('email', this.state.email )
         formData.append('username', this.state.username )
         formData.append('password', this.state.password )
-        fetch(`https://the-social-reloader-server.herokuapp.com/signup`, {  
-            method: 'POST',  
-            body: formData 
-        })
-        .then((data) => {
-            if(data.status == 200) {
-                console.log(data)
-                this.setState({
-                    submitted: true
+        for (let i = 0; i < this.state.userdata.length; i++) {
+            if(this.state.email !== this.state.userdata[i].email || this.state.username !== this.state.userdata[i].username) {
+                return fetch(`https://the-social-reloader-server.herokuapp.com/signup`, {  
+                    method: 'POST',  
+                    body: formData 
                 })
+                .then(() => this.setState({
+                    submitted: true
+                }))
+                .then(() => window.location.assign("http://localhost:3000/login"))
+                .then(() => this.form.reset())
+                .catch(function (error) {  
+                    console.log('Request failure: ', error);  
+                });
             } else {
-                alert('This Email or Username Already Exists')
+                return(
+                    document.getElementById("log-matcherror-id").classList.add('log-matcherror'),
+                    document.getElementById("log-matcherror-id").classList.remove('log-matcherror-none')
+                )
             }
-        })
-        /*.then(() => this.setState({
-            submitted: true
-        }))*/
-        //.then(() => window.location.assign("http://localhost:3000/login"))
-        .then(() => this.form.reset())
-        .catch(function (error) {  
-          console.log('Request failure: ', error);  
-        });
+        }
     }
 
     render() {
         return(
             <form className="Log-Form" onSubmit={this.handleSubmit} ref={(form) => { this.form = form }}>
+                <label className="log-matcherror-none" id="log-matcherror-id">This Email or Username Already Exist</label>
                 <label className="Log-Label">Email</label>
                 <input type="text" className="Log-Input" onChange={ e => this.setState({ email : e.target.value }) } required/>
                 <label className="Log-Label">Username</label>

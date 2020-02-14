@@ -18,7 +18,7 @@ class Shotgun extends React.Component {
         this.setState({
             results: data
         })
-      );
+      )
     }
 
     render() {

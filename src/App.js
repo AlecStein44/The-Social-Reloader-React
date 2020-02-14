@@ -12,11 +12,15 @@ import RiflePost from './components/RiflePost';
 import PistolPost from './components/PistolPost';
 import ShotgunPost from './components/ShotgunPost';
 import SignUp from './components/SignUp';
+import LogIn from './components/LogIn';
 import DataPage from './components/DataPage';
 import Search from './components/Search';
+import User from './components/User';
 import './App.css';
 /*function App = () => {}*/
 class App extends React.Component {
+
+
   render() {
     return (
       <BrowserRouter>
@@ -32,8 +36,10 @@ class App extends React.Component {
                   <Route path="/pistolpost" component={PistolPost} />
                   <Route path="/shotgunpost" component={ShotgunPost} />
                   <Route path="/signup" component={SignUp} />
+                  <Route path="/login" component={LogIn} />
                   <Route path="/data" component={DataPage} />
                   <Route path="/search" component={Search} />
+                  <Route path="/user" component={User} />
                   <Route component={ErrorPage} />
               </Switch>
       </BrowserRouter>

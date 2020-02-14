@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import ContPistolRifle from './ContPistolRifle';
 import ContShotgun from './ContShotgun';
 
@@ -29,7 +28,7 @@ class Saved extends React.Component {
         if(localStorage.getItem('item') !== null) {
             let getItem = localStorage.getItem('item')
             let savedData = getItem.split(" ")
-            let finalData = data.filter(data => savedData.find(data2 => data.id == data2))
+            let finalData = data.filter(data => savedData.find(data2 => data.id === data2))
             let riflePistolArr = []
             let shotgun = []
             finalData.map(data => {
